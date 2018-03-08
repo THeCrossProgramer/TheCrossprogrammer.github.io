@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Pong </title> 
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script> 
+<script> 
+	function start(){
+	sjs.open("target",500,400);
+	//ball stuff
+	//donot put enything elts here
+	var ball = new sjs.Image("Images/planet.png");
+	ball.type = "ball";
+	ball.setSize(100,100)
+	ball.center();
+	ball.friction = 0;
+	ball.bounce();
+	ball.pushUp(5);
+	ball.pushLeft(4);
+	//paddle 1
+	var paddle1 = new sjs.Image("Images/paddle2.png")
+	paddle1.type = "paddle1"
+	paddle1.centerH();
+	paddle1.setSize(100,20)
+	sjs.keyDown (Left_Key, function(){paddle1.pushleft();
+	});
+		var paddle2 = new sjs.Image("Images/paddle.png")
+	paddle2.type = "paddle2"
+	paddle2.center().bottom();
+	paddle2.setSize(100,20)
+   }//end start
+</script> 
+</head> 
+<body onload="start()"> 
+<h1> Pong Game </h1> 
+<div id="target" style="margin:auto;background:grey;"></div> 
+</body> 
+</html>

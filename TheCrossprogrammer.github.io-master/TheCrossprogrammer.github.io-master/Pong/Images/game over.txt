@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>game over</title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"> </script>
+<script>
+function start(){
+sjs.open();
+var gameover_text = new sjs.Text("Too Bad, You Lose!",28,"blue");
+
+var restartBtn = new sjs.Button("Restart", function(){
+window.location = "file:///C:/Users/Cross/Desktop/.html";
+
+SJS.keyDown(SPACE_KEY, function(){
+window.location = "file:///C:/Users/Cross/Desktop/.html"();
+});
+} //end---------------------------------------------------//
+</script>
+</head>
+<body onload="start()">
+<h1> ah so close I gess thats to bad you lose.
+
+
+
+
+
+
+
+
+
+click SPACE to restart </h1>
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
